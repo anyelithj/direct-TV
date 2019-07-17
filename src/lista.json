@@ -1,0 +1,73 @@
+{
+    "lista": [{
+            "nombre": "ESPN",
+            "numero_canal": "1620",
+            "HD": true,
+            "programas": [{
+                    "nombre": "SCRUM",
+                    "deporte": "rugby"
+                },
+                {
+                    "nombre": "Goles de Europa",
+                    "deporte": "fútbol"
+                }
+            ]
+        },
+        {
+            "nombre": "NatGeo",
+            "numero_canal": "730",
+            "HD": false,
+            "programas": [{
+                    "nombre": "Alerta Aeropuerto Bogota",
+                    "temática": "Seguridad aeroportuaria"
+                },
+                {
+                    "nombre": "Detective en Bogotá",
+                    "temática": "Suspenso"
+                }
+            ]
+        },
+        {
+            "nombre": "Comedy Central",
+            "numero_canal": "1215",
+            "HD": true,
+            "programas": [{
+                    "nombre": "South Park",
+                    "tipo": "animación"
+                },
+                {
+                    "nombre": "Stand Up Colombia",
+                    "tipo": "comedia"
+                }
+            ]
+        },
+        {
+            "nombre": "History Channel",
+            "numero_canal": "1724",
+            "HD": true,
+            "programas": [{
+                    "nombre": "Desafío Sobre Fuego",
+                    "tipo": "concursos"
+                },
+                {
+                    "nombre": "El Precio de la Historia",
+                    "tipo": "documental"
+                }
+            ]
+        },
+        {
+            "nombre": "Canal Caracol",
+            "numero_canal": "104",
+            "HD": false,
+            "programas": [{
+                    "nombre": "Desafío Super Humanos",
+                    "tipo": "reality"
+                },
+                {
+                    "nombre": "La Gloria de Lucho",
+                    "tipo": "bionovela"
+                }
+            ]
+        }
+    ]
+}

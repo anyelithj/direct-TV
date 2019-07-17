@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { lista } from './lista.json';
+import Listado from 'components/lista';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Formulario from './components/formulario'
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      lista
+    }
+    this.handleAgregarTarea = this.handleAgregarTarea.bind(this)
+  }
+  handleAgregarTarea(listaNueva) {
+    this.setState({
+      lista: [...this.state.lista, listaNueva]
+    })
+  }
+  render() {
+    const lista = this.state.lista.map((tarea, i) => { 
+      return (
+        <Listado tareas={tarea} key={i} />
+      )
+    })
+    return (
+      <div className="Container">
+        <div>
+          <span className="contador">
+            {this.state.lista.length}
+          </span>
+        </div>
+        <div>
+          <Formulario onAgregarTarea={this.handleAgregarTarea} />
+        </div>
+        <div>
+          {lista}
+        </div>
+      </div>
+    );
+  }
+
 }
 
-export default App;
+
+export default App
+
+
